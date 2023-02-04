@@ -31,7 +31,10 @@ app.post('/register', (req, res) => {
   const user = `${firstname} ${lastname}\n${address}\n${age}\n${emailaddress}`;
 
   fs.writeFileSync('user.txt', user);
-  res.send('User registered successfully!');
+  res.render('thankyou');
+
 });
+
+
 
 app.listen(3000, () => console.log('Server listening on port 3000!'));

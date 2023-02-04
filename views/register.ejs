@@ -101,42 +101,46 @@ body {
     position: relative;
     margin-bottom: 1em;
 }
+
+#terms {
+  text-decoration: none;
+}
 </style>
 <body class="text-center">
     <main class="form-signin w-100 m-auto">
-      <form action="/login" method="post" class="needs-validation" novalidate>
+      <form action="/register" method="post">
 
         <img class="mb-4" src="https://www.gstatic.com/devrel-devsite/prod/v1ba1082cb0bd9b151fb2d708d31f382e850c5d60b82de6be21570706ce15859e/cloud/images/cloud-logo.svg" alt="" width="300" height="100">
         <h1 class="h5 mb-3 fw-normal text-white">Register Here</h1>
     
         <div class="form-floating">
-          <input type="text" class="form-control rounded-3" id="floatingInput" name="username" placeholder="Username" required>
-          <label for="floatingInput">First Name</label>
+          <input type="text" class="form-control rounded-3 form-label" id="validationCustom01" name="username" placeholder="Username" required>
+          <label for="floatingName" class="form-label">First Name</label>
         </div>
 
         <div class="form-floating">
           <input type="text" name="password" class="form-control rounded-3" id="floatingPassword" placeholder="Last Name" required>
-          <label for="floatingPassword">Last Name</label>
+          <label for="floatingName">Last Name</label>
         </div>
 
         <div class="form-floating">
           <input type="text" name="address" class="form-control rounded-3" id="floatingPassword" placeholder="Address" required>
-          <label for="floatingPassword">Address</label>
+          <label for="floatingAddress">Address</label>
         </div>
 
         <div class="form-floating">
           <input type="number" name="number" class="form-control rounded-3" id="floatingPassword" placeholder="Age" min="1" max="100" required>
-          <label for="floatingPassword">Age</label>
+          <label for="floatingAge">Age</label>
         </div>
 
         <div class="form-floating">
           <input type="email" name="emailaddress" class="form-control rounded-3" id="floatingPassword" placeholder="Email Address" required>
-          <label for="floatingPassword">Email Address</label>
+          <label for="floatingEmail">Email Address</label>
         </div>
     
         <div class="checkbox mb-3">
           <label class="text-white">
-            <input type="checkbox" value="remember-me" required> Remember me
+            <input type="checkbox" value="remember-me" required> I agree with <a href="https://cloud.google.com/terms" id="terms" target="_blank"> Terms and Conditions.</a>
           </label>
         </div>
 
