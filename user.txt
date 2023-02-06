@@ -1,4 +1,4 @@
 undefined undefined
-Angeles City Pampanga
+Angeles City
 undefined
-test@paypal.com
+test2paypal@paypal.com
